@@ -9,22 +9,14 @@
     font-family: shabnam;
     src: url(./Assets/Fonts/Shabnam.ttf);
 }
-body{
-    width: 100vw;
-    height: auto;
-}
 .div_main{
-    width: 100%;
-    height: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    background-color: #F5F5F5;
-    position: relative;
 }
 /* ----------------------right side  */
 .div_main_right{
-    width: 15%;
+    width: 15vw;
     height: 100vh;
     background-color: white;
     display: flex;
@@ -131,6 +123,7 @@ body{
     justify-content: space-around;
     font-size: 1vw;
     list-style-type: none;
+    margin-top: 25%;
 }
 .list_item_dashboard{
     color: #5E55E6;
@@ -195,9 +188,119 @@ body{
 }
 /* ---------------------left side  */
 .div-main-left{
-    width: 85%;
+    width: 85vw;
     height: auto;
-    background-color: transparent;
+    background-color: #F5F5F5;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+/* every box property */
+.container-box{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+.cell-box{
+    height: 100%;
+    padding: 10px;
+}
+.content-box{
+    height: 100%;
+    background-color: white;
+    border-radius: 5px;
+}
+/* summery property */
+#summery-container{
+    height: 16vh;
+}
+.summery-cell-box{
+    width: 25%;
+}
+.summery-content-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+}
+.summery-icon-layout{
+    width: 25%;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    position: absolute;
+    top: 0 ;
+    left: 0;
+    transition: width 1s;
+}
+.summery-icon-layout:hover{
+    width: 100%;
+    border-radius: 5px;
+}
+#icon-layout1{
+    background: rgb(95,114,227);
+    background: linear-gradient(0deg, rgba(95,114,227,1) 0%, rgba(128,95,228,1) 100%);
+}
+#icon-layout2{
+    background: rgb(241,154,27);
+    background: linear-gradient(0deg, rgba(241,154,27,1) 0%, rgba(254,197,58,1) 100%);
+}
+#icon-layout3{
+    background: rgb(236,68,81);
+    background: linear-gradient(0deg, rgba(236,68,81,1) 0%, rgba(243,71,127,1) 100%);
+}
+#icon-layout4{
+    background: rgb(97,124,253);
+    background: linear-gradient(0deg, rgba(97,124,253,1) 0%, rgba(32,198,246,1) 100%);
+}
+.summery-icon-png{
+    width: 3vw;
+    height: 2vw;
+}
+#massages-icon-png{
+    width: 2.2vw;
+    height: 2.5vw;
+}
+.summery-information-layout{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 2% 5% 2% 0% ;
+}
+.summery-title{
+    font-size: 0.8vw;
+    color: #A7A7A7;
+}
+.summery-value{
+    font-size: 1.2vw;
+    font-weight: bold;
+    color: #03000F;
+}
+.more-detail{
+    font-size: 0.8vw;
+    color: #A7A7A7;
+}
+.highlight{
+    font-weight: bold;
+    font-size: 0.9vw;
+    color: #645BE6;
+}
+.red-highlight{
+    color: #E63936 ;
+    font-size: 1vw;
+    font-weight: bold;
+}
+.green-highlight{
+    color: #19CC92 ;
+    font-size: 1vw;
+    font-weight: bold;
 }
