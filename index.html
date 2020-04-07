@@ -7,7 +7,9 @@
         <meta name="description" content="$[username] - Dashboard">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/743f311229.js" crossorigin="anonymous"></script>
+        
     </head>
     <body>
         <div class="div_main">
@@ -137,9 +139,38 @@
                        </div>
                    </div>
                </div>
-               
+               <div class="container-box" id="middle-container">
+                   <div class="cell-box" id="draw-container-layout">
+                       <div class="content-box">
+                           <div id="draw">
+                            <i class="fas fa-pencil-alt write_icon" id="draw-icon-position"></i>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="cell-box" id="chart-container-layout">
+                       <div class="content-box">
+                           <div class="box-header-layout">
+                               <div class="box-header-titles-layout">
+                                   <span class="box-header-title-span-focused">
+                                       خلاصه عملکرد
+                                   </span>
+                               </div>
+                               <div class="box-header-time-option-layout">
+                                    <select class="time-option">
+                                        <option value="0">ماه گذشته</option>
+                                        <option value="1">فصل گذشته</option>
+                                        <option value="2">سال گذشته</option>
+                                    </select>
+                               </div>
+                           </div>
+                           <div id="chart-layout">
+                               <canvas id="chart" ></canvas>
+                           </div>
+                       </div>
+                   </div>
+               </div>
             </div>
         </div>
-
+        <script src="./script.js"></script>
     </body>
 </html>

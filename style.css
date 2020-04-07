@@ -195,7 +195,7 @@
     left: 0;
     top: 0;
 }
-/* every box property */
+/* [-] every box property */
 .container-box{
     width: 100%;
     display: flex;
@@ -210,8 +210,57 @@
     height: 100%;
     background-color: white;
     border-radius: 5px;
+    -webkit-box-shadow: -5px 6px 16px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: -5px 6px 16px -11px rgba(0,0,0,0.75);
+    box-shadow: -5px 6px 16px -11px rgba(0,0,0,0.75);
 }
-/* summery property */
+/* + middle box headers */
+.box-header-layout{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+.box-header-titles-layout{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.box-header-title-span-focused{
+    color: #211F2D;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #6B60E5;
+    font-size: 1vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.box-header-title-span-not-focused{
+    color: #D2D2D2;
+}
+.box-header-time-option-layout{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.time-option{
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border-color: #889098;
+    padding: 5%;
+    font-size: 0.7vw;
+    color: #889098;
+}
+
+/* [+] summery container */
 #summery-container{
     height: 16vh;
 }
@@ -304,3 +353,41 @@
     font-size: 1vw;
     font-weight: bold;
 }
+/* [+] middle container */
+#middle-container{
+    height: 60vh;
+}
+/* draw section */
+#draw-container-layout{
+    width: 60%;
+}
+#chart-container-layout{
+    width: 40%;
+}
+#draw{
+    width: 100%;
+    height: 100%;
+    background: rgb(139,96,229);
+    background: linear-gradient(135deg, rgba(139,96,229,1) 0%, rgba(94,104,228,1) 100%);
+    border-radius: 5px;
+    color: white;
+    position: relative;
+}
+#draw-icon-position{
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+/* chart section */
+#chart-layout{
+    width: 100%;
+    height: 85%;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+}
+#chart{
+    width: 100%;
+    height: auto;
+}
+
