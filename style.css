@@ -224,7 +224,7 @@
     padding-left: 5%;
 }
 .box-header-titles-layout{
-    width: 80%;
+    width: 85%;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -240,15 +240,22 @@
     align-items: center;
 }
 .box-header-title-span-not-focused{
-    color: #D2D2D2;
+    color: #888;
+    font-size: 0.8vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 2.5%;
 }
 .box-header-time-option-layout{
-    width: 20%;
+    width: auto;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    direction: ltr;
+    margin-right: auto;
+    
 }
 .time-option{
     width: 100%;
@@ -258,8 +265,91 @@
     padding: 5%;
     font-size: 0.7vw;
     color: #889098;
+    direction: rtl;
 }
-
+.gray-numeric-notification-not-selected{
+    margin-right: 5px;
+    font-size: 0.7vw;
+    background-color: #EEEEEE;
+    border-radius: 5px;
+    padding: 2px;
+}
+.gray-numeric-notification-selected{
+    font-weight: bold;
+    color:#373737;
+}
+.article-layout{
+    width: 100%;
+    height: 85%;
+}
+.tabel{
+    color: #121021;
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+.tabel-head-row{
+    font-size: 0.8vw;
+    background-color: #eee;
+    text-align: right;
+    padding-right: 10px;
+}
+.first-th-or-td{
+    padding-right: 2.5vw;
+}
+.tabel-data-row{
+    font-size: 0.8vw;
+    border-bottom-width: 1px;
+    border-bottom-color: #dedede;
+    border-bottom-style: solid;
+    position: relative;
+}
+.tabel-data-row:hover{
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+}
+.table-title-content-layout{
+    display: flex;
+    flex-direction: column;
+    
+}
+.table-title-description{
+    color: #636363;
+    font-size: 0.5vw;
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+.padding-right-and-left{
+    padding-right: 1%;
+    padding-left: 1%;
+}
+.table-title-tag{
+    color: #7166E8;
+}
+.person-layout{
+    display: flex;
+    align-items: center;
+}
+.person-image{
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+}
+.person-detail{
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+    color: #999;
+    font-size: 0.7vw;
+    font-weight: bold;
+}
+.person-more-detail{
+    margin-top: 5%;
+    font-size: 0.5vw;
+    font-weight: normal;
+    color: #7E7E7E;
+}
 /* [+] summery container */
 #summery-container{
     height: 16vh;
@@ -354,8 +444,8 @@
     font-weight: bold;
 }
 /* [+] middle container */
-#middle-container{
-    height: 60vh;
+.middle-container{
+    height: 65vh;
 }
 /* draw section */
 #draw-container-layout{
@@ -390,4 +480,138 @@
     width: 100%;
     height: auto;
 }
-
+/* middle section part 2 */
+#ticket-cell-box{
+    width: 60%;
+}
+#table-layout{
+    padding-top: 20px;
+}
+.proyarity-layout{
+    display: flex;
+}
+.proyarity-icon{
+    width: 0.6vw;
+    height: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.proyarity-icon-bar{
+    width: 100%;
+    height: 20%;
+    border-radius: 25%;
+}
+.proyarity-name{
+    font-size: 0.8vw;
+    padding-right: 20%;
+    color: #7C7C7C;
+}
+.gray-bar{
+    background-color: #DBD8F8;
+}
+.blue-bar{
+    background-color: #6459E5;
+}
+.red-bar{
+    background-color: #F44639;
+}
+.table-data-row-icon-layout{
+    width: 0.5vw;
+    height: 2.5vw;
+    background-color: #C3C3C3;
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    right: 1.5vw;
+    border-radius: 0.5vw;
+}
+.blue-icon-layout{
+    background-color: #60C9F8;
+}
+.green-icon-layout{
+    background-color: #79F48A;
+}
+.label-icon{
+    width: 1vw;
+    height: 1vw;
+    background-color: #ddd;
+    border-radius: 0.3vw;
+}
+#massage-cell-box{
+    width: 40%;
+}
+#massage-box{
+    padding-bottom: 2.5%;
+    padding-top: 2.5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.massages-section-layout{
+    width: 100%;
+    height: 33.33%;
+    border-top-color: #eee;
+    border-top-style: solid;
+    border-top-width: 1px;
+    display: flex;
+}
+.last-massages-section-layout{
+    border-bottom-color: #eee;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+.massage-image-layout{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.massage-text-layout{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.8vw;
+    padding-left: 1vw;
+    color:#484848;
+}
+.massage-png{
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+}
+.massage-title{
+    display: flex;
+    align-items: center;
+}
+.massage-date{
+    margin-right: auto;
+}
+.new-massage{
+    color: #fff;
+    background-color: #F5355E;
+    border-radius: 1vw;
+    padding: 0vw 0.5vw;
+    margin-right: 0.5vw;
+}
+.massage-detail{
+    margin-top: 0.25vw;
+}
+.massage-more-detail{
+    margin-top: 0.25vw;
+    color: #B1B1B1;
+    font-size: 0.65vw;
+}
+/* last container */
+#last-container{
+    height: 65vh;
+}
+#Encyclopedia-layout{
+    width: 45%;
+}
+#news-layout{
+    width: 55%;
+}
