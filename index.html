@@ -1,543 +1,553 @@
 <!DOCTYPE html>
 <html lang="fa">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Dashboard</title>
-        <meta name="description" content="$[username] - Dashboard">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./style.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/743f311229.js" crossorigin="anonymous"></script>
-        
-    </head>
-    <body>
-        <div class="div_main">
-            <!-- aside menu  -->
-            <div class="div_main_right">
-                <div class="aside_date">
-                    <div class="aside_date-setlocation">
-                        <span class="aside_date--time"><span class="aside_date--time---hour">۱۵</span>:۲۶</span>
-                        <span class="aside_date--date">یکشنبه,۱۲فروردین</span>
-                    </div>
-                </div>
-                <div class="aside_menu">
-                    <div class="aside_menu_sections">
-                        <div class="aside_menu_dev">
-                            <div class="aside_menu_dev-avatar">
-                                <img class="avatar_img" src="./Assets/PNG/avatar.png" alt="avatarImg">
-                            </div>
-                            <div class="aside_menu_dev-discription">
-                                <div class="dev-discription--username">
-                                    <span class="username">محمدحسین لطف آذر</span>
-                                </div>
-                                <div class="dev-discription--userjob">
-                                    <span class="userjob">توسعه دهنده </span>
-                                </div>
-                            </div>
-                        </div>
-                        <ul class="aside_menu_option">
-                            <li class="list_item_dashboard">
-                                <i class="fas fa-desktop"></i>
-                                <span class="item_text">داشبورد</span>
-                            </li>
-                            <li class="list_item_simple">
-                                <i class="fas fa-envelope"></i>
-                                <span class="item_text">صندوق پیام</span>
-                                <div class="massageCount">۲</div>
-                            </li>
-                            <li class="list_item_simple">
-                                <i class="fas fa-ticket-alt"></i>
-                                <span class="item_text">تیکت</span>
-                                <div class="massageCount">۱۸</div>
-                            </li>
-                            <li class="list_item_simple bookrepo">
-                                <i class="fas fa-book"></i>
-                                <span class="item_text">دانشنامه</span>
-                                
-                            </li>
-                            <ul class="nested_list">
-                                <li >همه دانشنامه ها</li>
-                                <li class="nested_item">پیش نویس ها</li>
-                            </ul>
-                            <li class="list_item_simple news">
-                                <i class="fas fa-newspaper"></i>
-                                <span class="item_text">اخبار</span>
-                            </li>
-                            <li class="list_item_simple management">
-                                <i class="fas fa-cog"></i>
-                                <span class="item_text">مدیریت</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <img id="logo" src="./Assets/PNG/Logo.png" alt="logo">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dashboard</title>
+    <meta name="description" content="$[username] - Dashboard">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+        integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/743f311229.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="div_main">
+        <!-- aside menu  -->
+        <div class="div_main_right">
+            <div class="aside_date">
+                <div class="aside_date-setlocation">
+                    <span class="aside_date--time"><span class="aside_date--time---hour">۱۵</span>:۲۶</span>
+                    <span class="aside_date--date">یکشنبه,۱۲فروردین</span>
                 </div>
             </div>
-            <!-- main body  -->
-            <div class="div-main-left">
-                <div class="navbar-layout" id="navbar">
-                    <div class="nav-sections-layout">
-                        <i class="fa fa-search" aria-hidden="true"></i>
-                        <input type="search" name="search" id="nav-search" placeholder="عبارت مورد نظر خود را جست و جو کنید">
-                        <div id="nav-icon">
+            <div class="aside_menu">
+                <div class="aside_menu_sections">
+                    <div class="aside_menu_dev">
+                        <div class="aside_menu_dev-avatar">
+                            <img class="avatar_img" src="./Assets/PNG/avatar.png" alt="avatarImg">
+                        </div>
+                        <div class="aside_menu_dev-discription">
+                            <div class="dev-discription--username">
+                                <span class="username">محمدحسین لطف آذر</span>
+                            </div>
+                            <div class="dev-discription--userjob">
+                                <span class="userjob">توسعه دهنده </span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="aside_menu_option">
+                        <li class="list_item_dashboard">
+                            <i class="fas fa-desktop"></i>
+                            <span class="item_text">داشبورد</span>
+                        </li>
+                        <li class="list_item_simple">
                             <i class="fas fa-envelope"></i>
-                            <i class="fas fa-bell ico-margin"></i>
+                            <span class="item_text">صندوق پیام</span>
+                            <div class="massageCount">۲</div>
+                        </li>
+                        <li class="list_item_simple">
+                            <i class="fas fa-ticket-alt"></i>
+                            <span class="item_text">تیکت</span>
+                            <div class="massageCount">۱۸</div>
+                        </li>
+                        <li class="list_item_simple bookrepo">
+                            <i class="fas fa-book"></i>
+                            <span class="item_text">دانشنامه</span>
+
+                        </li>
+                        <ul class="nested_list">
+                            <li>همه دانشنامه ها</li>
+                            <li class="nested_item">پیش نویس ها</li>
+                        </ul>
+                        <li class="list_item_simple news">
+                            <i class="fas fa-newspaper"></i>
+                            <span class="item_text">اخبار</span>
+                        </li>
+                        <li class="list_item_simple management">
+                            <i class="fas fa-cog"></i>
+                            <span class="item_text">مدیریت</span>
+                        </li>
+                    </ul>
+                </div>
+                <img id="logo" src="./Assets/PNG/Logo.png" alt="logo">
+            </div>
+        </div>
+        <!-- main body  -->
+        <div class="div-main-left">
+            <div class="navbar-layout" id="navbar">
+                <div class="nav-sections-layout">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input type="search" name="search" id="nav-search"
+                        placeholder="عبارت مورد نظر خود را جست و جو کنید">
+                    <div id="nav-icon">
+                        <i class="fas fa-envelope"></i>
+                        <i class="fas fa-bell ico-margin"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="container-box" id="summery-container">
+                <div class="cell-box summery-cell-box">
+                    <div class="content-box summery-content-box">
+                        <div class="summery-information-layout">
+                            <span class="summery-title">تعداد کل کاربران</span>
+                            <span class="summery-value">۲۳۸</span>
+                            <span class="more-detail"><span class="highlight">
+                                    ۱۴۵
+                                </span>کاربر فعال</span>
+                        </div>
+                        <div class="summery-icon-layout" id="icon-layout1">
+                            <img src="./Assets/PNG/users.png" alt="user-logo" class="summery-icon-png">
                         </div>
                     </div>
                 </div>
-               <div class="container-box" id="summery-container">
-                   <div class="cell-box summery-cell-box">
-                       <div class="content-box summery-content-box">
-                           <div class="summery-information-layout">
-                               <span class="summery-title">تعداد کل کاربران</span>
-                               <span class="summery-value">۲۳۸</span>
-                               <span class="more-detail"><span class="highlight">
-                                ۱۴۵
-                               </span>کاربر فعال</span>
-                           </div>
-                           <div class="summery-icon-layout" id="icon-layout1">
-                               <img src="./Assets/PNG/users.png" alt="user-logo" class="summery-icon-png">
-                           </div>
-                       </div>
-                   </div>
-                   <div class="cell-box summery-cell-box">
-                       <div class="content-box summery-content-box">
-                            <div class="summery-information-layout">
-                                <span class="summery-title">تعداد کل تیکت ها</span>
-                                <span class="summery-value">۸۵۶</span>
-                                <span class="more-detail"><span class="highlight">
+                <div class="cell-box summery-cell-box">
+                    <div class="content-box summery-content-box">
+                        <div class="summery-information-layout">
+                            <span class="summery-title">تعداد کل تیکت ها</span>
+                            <span class="summery-value">۸۵۶</span>
+                            <span class="more-detail"><span class="highlight">
                                     ۵۲۳
                                 </span>کاربر فعال</span>
-                            </div>
-                            <div class="summery-icon-layout" id="icon-layout2">
-                                <img src="./Assets/PNG/tickets.png" alt="tickets-logo" class="summery-icon-png">
-                            </div>
-                       </div>
-                   </div>
-                   <div class="cell-box summery-cell-box">
-                       <div class="content-box summery-content-box">
-                            <div class="summery-information-layout">
-                               <span class="summery-title">تعداد کل دانشنامه ها</span>
-                               <span class="summery-value">۶۱۹</span>
-                               <span class="more-detail">
-                                   <span class="green-highlight">
+                        </div>
+                        <div class="summery-icon-layout" id="icon-layout2">
+                            <img src="./Assets/PNG/tickets.png" alt="tickets-logo" class="summery-icon-png">
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-box summery-cell-box">
+                    <div class="content-box summery-content-box">
+                        <div class="summery-information-layout">
+                            <span class="summery-title">تعداد کل دانشنامه ها</span>
+                            <span class="summery-value">۶۱۹</span>
+                            <span class="more-detail">
+                                <span class="green-highlight">
                                     <i class="fas fa-arrow-up"></i>%۴/۶
-                                   </span>
-                                   نسبت به ماه گذشته
-                               </span>
-                            </div>
-                            <div class="summery-icon-layout" id="icon-layout3">
-                                <img src="./Assets/PNG/encyclopedias.png" alt="encyclopedias-logo" class="summery-icon-png">
-                            </div>
-                       </div>
-                   </div>
-                   <div class="cell-box summery-cell-box">
-                       <div class="content-box summery-content-box">
-                            <div class="summery-information-layout">
-                               <span class="summery-title">تعداد کل خبر ها</span>
-                               <span class="summery-value">۱۲۵۳</span>
-                               <span class="more-detail">
+                                </span>
+                                نسبت به ماه گذشته
+                            </span>
+                        </div>
+                        <div class="summery-icon-layout" id="icon-layout3">
+                            <img src="./Assets/PNG/encyclopedias.png" alt="encyclopedias-logo" class="summery-icon-png">
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-box summery-cell-box">
+                    <div class="content-box summery-content-box">
+                        <div class="summery-information-layout">
+                            <span class="summery-title">تعداد کل خبر ها</span>
+                            <span class="summery-value">۱۲۵۳</span>
+                            <span class="more-detail">
                                 <span class="red-highlight">
                                     <i class="fas fa-arrow-down"></i>%۶/۲
                                 </span>
                                 نسبت به ماه گذشته
-                               </span>
-                            </div>
-                            <div class="summery-icon-layout" id="icon-layout4">
-                                <img src="./Assets/PNG/messages.png" alt="messages-logo" class="summery-icon-png" id="massages-icon-png">
-                            </div>
-                       </div>
-                   </div>
-               </div>
-               <div class="container-box middle-container">
-                   <div class="cell-box" id="draw-container-layout">
-                       <div class="content-box">
-                           <div id="draw">
+                            </span>
+                        </div>
+                        <div class="summery-icon-layout" id="icon-layout4">
+                            <img src="./Assets/PNG/messages.png" alt="messages-logo" class="summery-icon-png"
+                                id="massages-icon-png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-box middle-container">
+                <div class="cell-box" id="draw-container-layout">
+                    <div class="content-box">
+                        <div id="draw">
                             <i class="fas fa-pencil-alt write_icon" id="draw-icon-position"></i>
-                           </div>
-                       </div>
-                   </div>
-                   <div class="cell-box" id="chart-container-layout">
-                       <div class="content-box">
-                           <div class="box-header-layout">
-                               <div class="box-header-titles-layout">
-                                   <span class="box-header-title-span-focused">
-                                       خلاصه عملکرد
-                                   </span>
-                               </div>
-                               <div class="box-header-time-option-layout">
-                                    <select class="time-option">
-                                        <option value="0">ماه گذشته</option>
-                                        <option value="1">فصل گذشته</option>
-                                        <option value="2">سال گذشته</option>
-                                    </select>
-                               </div>
-                           </div>
-                           <div id="chart-layout">
-                               <canvas id="chart" ></canvas>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-               <div class="container-box middle-container">
-                   <div class="cell-box" id="ticket-cell-box">
-                       <div class="content-box" id="ticket-content-box">
-                            <div class="box-header-layout">
-                                <div class="box-header-titles-layout">
-                                    <span class="box-header-title-span-focused">
-                                        <span>تیکت های ستاره دار</span>
-                                        <span class="gray-numeric-notification-not-selected gray-numeric-notification-selected"> ۱۳۰ </span>
-                                    </span>
-                                    <span class="box-header-title-span-not-focused">
-                                        <span>باز(همراه با پاسخ)</span>
-                                        <span class="gray-numeric-notification-not-selected"> ۵۲ </span>
-                                    </span>
-                                    <span class="box-header-title-span-not-focused">
-                                        <span>تیکت های ستاره دار</span>
-                                        <span class="gray-numeric-notification-not-selected"> ۲۹ </span>
-                                    </span>
-                                    <span class="box-header-title-span-not-focused">
-                                        <span>تیکت های ستاره دار</span>
-                                        <span class="gray-numeric-notification-not-selected"> ۲۸۰ </span>
-                                    </span>
-                                </div>
-                                <div class="box-header-time-option-layout">
-                                    <select class="time-option">
-                                        <option value="0">ماه گذشته</option>
-                                        <option value="1">فصل گذشته</option>
-                                        <option value="2">سال گذشته</option>
-                                    </select>
-                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-box" id="chart-container-layout">
+                    <div class="content-box">
+                        <div class="box-header-layout">
+                            <div class="box-header-titles-layout">
+                                <span class="box-header-title-span-focused">
+                                    خلاصه عملکرد
+                                </span>
                             </div>
-                            <div class="article-layout" id="table-layout">
-                                <table class="tabel">
-                                    <tr class="tabel-head-row">
-                                        <th class="first-th-or-td">عنوان</th>
-                                        <th>ایجاد شده توسط</th>
-                                        <th>اولویت</th>
-                                        <th>آخرین پاسخ دهنده</th>
-                                    </tr>
-                                    <tr class="tabel-data-row">
-                                        <td class="tabel-title-data-layout ">
-                                            <div class="table-data-row-icon-layout blue-icon-layout"></div>
-                                            <div class="table-title-content-layout first-th-or-td">
-                                                <span class="table-title-text">تعویض کارت صدای سیستم</span>
-                                                <div class="table-title-description">
-                                                    <div class="label-icon"></div>
-                                                    <span class="padding-right-and-left">عمومی</span>
-                                                    <div class="table-title-tag">
-                                                        <i class="fas fa-tags"></i>
-                                                        <span>سند,مدیریت,سازمانی</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="person-layout">
-                                                <img class="person-image" src="./Assets/PNG/realAvatar1.png" alt="Avatar1">
-                                                <div class="person-detail">
-                                                    <span>دانیال رحمانی نژاد</span>
-                                                    <span class="person-more-detail">۳ روز پیش</span>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="proyarity-layout">
-                                                <div class="proyarity-icon">
-                                                    <div class="proyarity-icon-bar gray-bar"></div>
-                                                    <div class="proyarity-icon-bar gray-bar"></div>
-                                                    <div class="proyarity-icon-bar blue-bar"></div>
-                                                </div>
-                                                <span class="proyarity-name">کم</span>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="person-layout">
-                                                <img class="person-image" src="./Assets/PNG/realAvatar1.png" alt="Avatar1">
-                                                <div class="person-detail">
-                                                    <span>دانیال رحمانی نژاد</span>
-                                                    <span class="person-more-detail">۳ روز پیش</span>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="tabel-data-row">
-                                        <td class="tabel-title-data-layout">
-                                            <div class="table-data-row-icon-layout blue-icon-layout"></div>
-                                            <div class="table-title-content-layout first-th-or-td">
-                                                <span class="table-title-text">درخواست تلفن برای واحد سرور اتاق سو...</span>
-                                                <div class="table-title-description">
-                                                    <div class="label-icon"></div>
-                                                    <span class="padding-right-and-left">انتقاد و پیشنهاد</span>
-                                                    <div class="table-title-tag">
-                                                        <i class="fas fa-tags"></i>
-                                                        <span>سند,مدیریت,سازمانی</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="person-layout">
-                                                <img class="person-image" src="./Assets/PNG/realAvatar2.png" alt="Avatar1">
-                                                <div class="person-detail">
-                                                    <span>مسعود سیاه قلم</span>
-                                                    <span class="person-more-detail">۸ روز پیش </span>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="proyarity-layout">
-                                                <div class="proyarity-icon">
-                                                    <div class="proyarity-icon-bar red-bar"></div>
-                                                    <div class="proyarity-icon-bar red-bar"></div>
-                                                    <div class="proyarity-icon-bar red-bar"></div>
-                                                </div>
-                                                <span class="proyarity-name">فوری</span>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="person-layout">
-                                                <img class="person-image" src="./Assets/PNG/realAvatar2.png" alt="Avatar1">
-                                                <div class="person-detail">
-                                                    <span>مسعود سیاه قلم</span>
-                                                    <span class="person-more-detail">۸ روز پیش </span>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="tabel-data-row">
-                                        <td class="tabel-title-data-layout">
-                                            <div class="table-data-row-icon-layout green-icon-layout"></div>
-                                            <div class="table-title-content-layout first-th-or-td">
-                                                <span class="table-title-text">عوض کردن هدفون سیستم طبقه دوم</span>
-                                                <div class="table-title-description">
-                                                    <div class="label-icon"></div>
-                                                    <span class="padding-right-and-left">عمومی</span>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="person-layout">
-                                                <img class="person-image" src="./Assets/PNG/realAvatar3.png" alt="Avatar1">
-                                                <div class="person-detail">
-                                                    <span>محمد رنجبران</span>
-                                                    <span class="person-more-detail">۱۸ روز پیش</span>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="proyarity-layout">
-                                                <div class="proyarity-icon">
-                                                    <div class="proyarity-icon-bar gray-bar"></div>
-                                                    <div class="proyarity-icon-bar blue-bar"></div>
-                                                    <div class="proyarity-icon-bar blue-bar"></div>
-                                                </div>
-                                                <span class="proyarity-name">متوسط</span>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="person-layout">
-                                                <img class="person-image" src="./Assets/PNG/realAvatar3.png" alt="Avatar1">
-                                                <div class="person-detail">
-                                                    <span>محمد رنجبران</span>
-                                                    <span class="person-more-detail">۱۸ روز پیش</span>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="tabel-data-row">
-                                        <td class="tabel-title-data-layout">
-                                            <div class="table-data-row-icon-layout"></div>
-                                            <div class="table-title-content-layout first-th-or-td">
-                                                <span class="table-title-text">مشکل در نصب ویندوز</span>
-                                                <div class="table-title-description">
-                                                    <div class="label-icon"></div>
-                                                    <span class="padding-right-and-left">انتقاد و پیشنهاد</span>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="person-layout">
-                                                <img class="person-image" src="./Assets/PNG/realAvatar4.png" alt="Avatar1">
-                                                <div class="person-detail">
-                                                    <span>رضا انارکی</span>
-                                                    <span class="person-more-detail">۲۰ روز پیش</span>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="proyarity-layout">
-                                                <div class="proyarity-icon">
-                                                    <div class="proyarity-icon-bar gray-bar"></div>
-                                                    <div class="proyarity-icon-bar gray-bar"></div>
-                                                    <div class="proyarity-icon-bar blue-bar"></div>
-                                                </div>
-                                                <span class="proyarity-name">کم</span>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="person-layout">
-                                                <img class="person-image" src="./Assets/PNG/realAvatar4.png" alt="Avatar1">
-                                                <div class="person-detail">
-                                                    <span>رضا انارکی</span>
-                                                    <span class="person-more-detail">۲۰ روز پیش</span>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="tabel-data-row">
-                                        <td class="tabel-title-data-layout">
-                                            <div class="table-data-row-icon-layout green-icon-layout"></div>
-                                            <div class="table-title-content-layout first-th-or-td">
-                                                <span class="table-title-text">خراب شدن صندلی مربوط به میز</span>
-                                                <div class="table-title-description">
-                                                    <div class="label-icon"></div>
-                                                    <span class="padding-right-and-left">عمومی</span>
-                                                    <div class="table-title-tag">
-                                                        <i class="fas fa-tags"></i>
-                                                        <span>سند,مدیریت,سازمانی</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="person-layout">
-                                                <img class="person-image" src="./Assets/PNG/realAvatar5.png" alt="Avatar1">
-                                                <div class="person-detail">
-                                                    <span>امیررضا رضوانی</span>
-                                                    <span class="person-more-detail">۱ ماه پیش</span>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="proyarity-layout">
-                                                <div class="proyarity-icon">
-                                                    <div class="proyarity-icon-bar gray-bar"></div>
-                                                    <div class="proyarity-icon-bar blue-bar"></div>
-                                                    <div class="proyarity-icon-bar blue-bar"></div>
-                                                </div>
-                                                <span class="proyarity-name">متوسط</span>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="person-layout">
-                                                <img class="person-image" src="./Assets/PNG/realAvatar5.png" alt="Avatar1">
-                                                <div class="person-detail">
-                                                    <span>امیررضا رضوانی</span>
-                                                    <span class="person-more-detail">۱ ماه پیش</span>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="tabel-data-row">
-                                        <td class="tabel-title-data-layout">
-                                            <div class="table-data-row-icon-layout blue-icon-layout"></div>
-                                            <div class="table-title-content-layout first-th-or-td">
-                                                <span class="table-title-text">مشکل در نصب برنامه های کاربردی</span>
-                                                <div class="table-title-description">
-                                                    <div class="label-icon"></div>
-                                                    <span class="padding-right-and-left">عمومی</span>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="person-layout">
-                                                <img class="person-image" src="./Assets/PNG/realAvatar6.png" alt="Avatar1">
-                                                <div class="person-detail">
-                                                    <span>کریم حسن آبادی</span>
-                                                    <span class="person-more-detail">۲ ماه پیش</span>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="proyarity-layout">
-                                                <div class="proyarity-icon">
-                                                    <div class="proyarity-icon-bar blue-bar"></div>
-                                                    <div class="proyarity-icon-bar blue-bar"></div>
-                                                    <div class="proyarity-icon-bar blue-bar"></div>
-                                                </div>
-                                                <span class="proyarity-name">زیاد</span>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="person-layout">
-                                                <img class="person-image" src="./Assets/PNG/realAvatar6.png" alt="Avatar1">
-                                                <div class="person-detail">
-                                                    <span>کریم حسن آبادی</span>
-                                                    <span class="person-more-detail">۲ ماه پیش</span>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </table>
+                            <div class="box-header-time-option-layout">
+                                <select class="time-option">
+                                    <option value="0">ماه گذشته</option>
+                                    <option value="1">فصل گذشته</option>
+                                    <option value="2">سال گذشته</option>
+                                </select>
                             </div>
-                       </div>
-                   </div>
-                   <div class="cell-box" id="massage-cell-box">
-                       <div class="content-box" id="massage-content-box">
-                            <div class="box-header-layout">
-                                <div class="box-header-titles-layout">
-                                    <span class="box-header-title-span-focused">
-                                        صندوق پیام
-                                    </span>
-                                </div>
-                                <div class="box-header-time-option-layout">
-                                    <select class="time-option">
-                                        <option value="0">ماه گذشته</option>
-                                        <option value="1">فصل گذشته</option>
-                                        <option value="2">سال گذشته</option>
-                                    </select>
-                                </div>
+                        </div>
+                        <div id="chart-layout">
+                            <canvas id="chart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-box middle-container">
+                <div class="cell-box" id="ticket-cell-box">
+                    <div class="content-box" id="ticket-content-box">
+                        <div class="box-header-layout">
+                            <div class="box-header-titles-layout">
+                                <span class="box-header-title-span-focused">
+                                    <span>تیکت های ستاره دار</span>
+                                    <span
+                                        class="gray-numeric-notification-not-selected gray-numeric-notification-selected">
+                                        ۱۳۰ </span>
+                                </span>
+                                <span class="box-header-title-span-not-focused">
+                                    <span>باز(همراه با پاسخ)</span>
+                                    <span class="gray-numeric-notification-not-selected"> ۵۲ </span>
+                                </span>
+                                <span class="box-header-title-span-not-focused">
+                                    <span>تیکت های ستاره دار</span>
+                                    <span class="gray-numeric-notification-not-selected"> ۲۹ </span>
+                                </span>
+                                <span class="box-header-title-span-not-focused">
+                                    <span>تیکت های ستاره دار</span>
+                                    <span class="gray-numeric-notification-not-selected"> ۲۸۰ </span>
+                                </span>
                             </div>
-                            <div class="article-layout" id="massage-box">
-                                <div class="massages-section-layout">
-                                    <div class="massage-image-layout">
-                                        <img class="massage-png" src="./Assets/PNG/realAvatar1.png" alt="avatar">
-                                    </div>
-                                    <div class="massage-text-layout">
-                                        <div class="massage-title">
-                                            <span>دانیال رحمانی نژاد</span>
-                                            <span class="new-massage">پیام جدید</span>
-                                            <span class="massage-date">۸ روز پیش </span>
+                            <div class="box-header-time-option-layout">
+                                <select class="time-option">
+                                    <option value="0">ماه گذشته</option>
+                                    <option value="1">فصل گذشته</option>
+                                    <option value="2">سال گذشته</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="article-layout" id="table-layout">
+                            <table class="tabel">
+                                <tr class="tabel-head-row">
+                                    <th class="first-th-or-td">عنوان</th>
+                                    <th>ایجاد شده توسط</th>
+                                    <th>اولویت</th>
+                                    <th>آخرین پاسخ دهنده</th>
+                                </tr>
+                                <tr class="tabel-data-row">
+                                    <td class="tabel-title-data-layout ">
+                                        <div class="table-data-row-icon-layout blue-icon-layout"></div>
+                                        <div class="table-title-content-layout first-th-or-td">
+                                            <span class="table-title-text">تعویض کارت صدای سیستم</span>
+                                            <div class="table-title-description">
+                                                <div class="label-icon"></div>
+                                                <span class="padding-right-and-left">عمومی</span>
+                                                <div class="table-title-tag">
+                                                    <i class="fas fa-tags"></i>
+                                                    <span>سند,مدیریت,سازمانی</span>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <span class="massage-detail">گزارش کارکرد دورهمی هفتم آقای دانیال رحمانی نژاد</span>
-                                        <span class="massage-more-detail">طرح‌نما یا لورم ایپسوم به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. </span>
-                                    </div>
-                                </div>
-                                <div class="massages-section-layout">
-                                    <div class="massage-image-layout">
-                                        <img class="massage-png" src="./Assets/PNG/realAvatar2.png" alt="avatar">
-                                    </div>
-                                    <div class="massage-text-layout">
-                                        <div class="massage-title">
-                                            <span>مسعود سیاه قلم</span>
-                                            <span class="new-massage">پیام جدید</span>
-                                            <span class="massage-date">۸ روز پیش </span>
+                                    </td>
+                                    <td>
+                                        <div class="person-layout">
+                                            <img class="person-image" src="./Assets/PNG/realAvatar1.png" alt="Avatar1">
+                                            <div class="person-detail">
+                                                <span>دانیال رحمانی نژاد</span>
+                                                <span class="person-more-detail">۳ روز پیش</span>
+                                            </div>
                                         </div>
-                                        <span class="massage-detail">گزارش کارکرد دورهمی هفتم آقای دانیال رحمانی نژاد</span>
-                                        <span class="massage-more-detail">طرح‌نما یا لورم ایپسوم به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. </span>
-                                    </div>
-                                </div>
-                                <div class="massages-section-layout last-massages-section-layout">
-                                    <div class="massage-image-layout">
-                                        <img class="massage-png" src="./Assets/PNG/realAvatar3.png" alt="avatar">
-                                    </div>
-                                    <div class="massage-text-layout">
-                                        <div class="massage-title">
-                                            <span>دانیال رحمانی نژاد</span>
-                                            <span class="massage-date">۸ روز پیش </span>
+                                    </td>
+                                    <td>
+                                        <div class="proyarity-layout">
+                                            <div class="proyarity-icon">
+                                                <div class="proyarity-icon-bar gray-bar"></div>
+                                                <div class="proyarity-icon-bar gray-bar"></div>
+                                                <div class="proyarity-icon-bar blue-bar"></div>
+                                            </div>
+                                            <span class="proyarity-name">کم</span>
                                         </div>
-                                        <span class="massage-detail">گزارش کارکرد دورهمی هفتم آقای دانیال رحمانی نژاد</span>
-                                        <span class="massage-more-detail">طرح‌نما یا لورم ایپسوم به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. </span>
+                                    </td>
+                                    <td>
+                                        <div class="person-layout">
+                                            <img class="person-image" src="./Assets/PNG/realAvatar1.png" alt="Avatar1">
+                                            <div class="person-detail">
+                                                <span>دانیال رحمانی نژاد</span>
+                                                <span class="person-more-detail">۳ روز پیش</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="tabel-data-row">
+                                    <td class="tabel-title-data-layout">
+                                        <div class="table-data-row-icon-layout blue-icon-layout"></div>
+                                        <div class="table-title-content-layout first-th-or-td">
+                                            <span class="table-title-text">درخواست تلفن برای واحد سرور اتاق سو...</span>
+                                            <div class="table-title-description">
+                                                <div class="label-icon"></div>
+                                                <span class="padding-right-and-left">انتقاد و پیشنهاد</span>
+                                                <div class="table-title-tag">
+                                                    <i class="fas fa-tags"></i>
+                                                    <span>سند,مدیریت,سازمانی</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="person-layout">
+                                            <img class="person-image" src="./Assets/PNG/realAvatar2.png" alt="Avatar1">
+                                            <div class="person-detail">
+                                                <span>مسعود سیاه قلم</span>
+                                                <span class="person-more-detail">۸ روز پیش </span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="proyarity-layout">
+                                            <div class="proyarity-icon">
+                                                <div class="proyarity-icon-bar red-bar"></div>
+                                                <div class="proyarity-icon-bar red-bar"></div>
+                                                <div class="proyarity-icon-bar red-bar"></div>
+                                            </div>
+                                            <span class="proyarity-name">فوری</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="person-layout">
+                                            <img class="person-image" src="./Assets/PNG/realAvatar2.png" alt="Avatar1">
+                                            <div class="person-detail">
+                                                <span>مسعود سیاه قلم</span>
+                                                <span class="person-more-detail">۸ روز پیش </span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="tabel-data-row">
+                                    <td class="tabel-title-data-layout">
+                                        <div class="table-data-row-icon-layout green-icon-layout"></div>
+                                        <div class="table-title-content-layout first-th-or-td">
+                                            <span class="table-title-text">عوض کردن هدفون سیستم طبقه دوم</span>
+                                            <div class="table-title-description">
+                                                <div class="label-icon"></div>
+                                                <span class="padding-right-and-left">عمومی</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="person-layout">
+                                            <img class="person-image" src="./Assets/PNG/realAvatar3.png" alt="Avatar1">
+                                            <div class="person-detail">
+                                                <span>محمد رنجبران</span>
+                                                <span class="person-more-detail">۱۸ روز پیش</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="proyarity-layout">
+                                            <div class="proyarity-icon">
+                                                <div class="proyarity-icon-bar gray-bar"></div>
+                                                <div class="proyarity-icon-bar blue-bar"></div>
+                                                <div class="proyarity-icon-bar blue-bar"></div>
+                                            </div>
+                                            <span class="proyarity-name">متوسط</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="person-layout">
+                                            <img class="person-image" src="./Assets/PNG/realAvatar3.png" alt="Avatar1">
+                                            <div class="person-detail">
+                                                <span>محمد رنجبران</span>
+                                                <span class="person-more-detail">۱۸ روز پیش</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="tabel-data-row">
+                                    <td class="tabel-title-data-layout">
+                                        <div class="table-data-row-icon-layout"></div>
+                                        <div class="table-title-content-layout first-th-or-td">
+                                            <span class="table-title-text">مشکل در نصب ویندوز</span>
+                                            <div class="table-title-description">
+                                                <div class="label-icon"></div>
+                                                <span class="padding-right-and-left">انتقاد و پیشنهاد</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="person-layout">
+                                            <img class="person-image" src="./Assets/PNG/realAvatar4.png" alt="Avatar1">
+                                            <div class="person-detail">
+                                                <span>رضا انارکی</span>
+                                                <span class="person-more-detail">۲۰ روز پیش</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="proyarity-layout">
+                                            <div class="proyarity-icon">
+                                                <div class="proyarity-icon-bar gray-bar"></div>
+                                                <div class="proyarity-icon-bar gray-bar"></div>
+                                                <div class="proyarity-icon-bar blue-bar"></div>
+                                            </div>
+                                            <span class="proyarity-name">کم</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="person-layout">
+                                            <img class="person-image" src="./Assets/PNG/realAvatar4.png" alt="Avatar1">
+                                            <div class="person-detail">
+                                                <span>رضا انارکی</span>
+                                                <span class="person-more-detail">۲۰ روز پیش</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="tabel-data-row">
+                                    <td class="tabel-title-data-layout">
+                                        <div class="table-data-row-icon-layout green-icon-layout"></div>
+                                        <div class="table-title-content-layout first-th-or-td">
+                                            <span class="table-title-text">خراب شدن صندلی مربوط به میز</span>
+                                            <div class="table-title-description">
+                                                <div class="label-icon"></div>
+                                                <span class="padding-right-and-left">عمومی</span>
+                                                <div class="table-title-tag">
+                                                    <i class="fas fa-tags"></i>
+                                                    <span>سند,مدیریت,سازمانی</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="person-layout">
+                                            <img class="person-image" src="./Assets/PNG/realAvatar5.png" alt="Avatar1">
+                                            <div class="person-detail">
+                                                <span>امیررضا رضوانی</span>
+                                                <span class="person-more-detail">۱ ماه پیش</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="proyarity-layout">
+                                            <div class="proyarity-icon">
+                                                <div class="proyarity-icon-bar gray-bar"></div>
+                                                <div class="proyarity-icon-bar blue-bar"></div>
+                                                <div class="proyarity-icon-bar blue-bar"></div>
+                                            </div>
+                                            <span class="proyarity-name">متوسط</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="person-layout">
+                                            <img class="person-image" src="./Assets/PNG/realAvatar5.png" alt="Avatar1">
+                                            <div class="person-detail">
+                                                <span>امیررضا رضوانی</span>
+                                                <span class="person-more-detail">۱ ماه پیش</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="tabel-data-row">
+                                    <td class="tabel-title-data-layout">
+                                        <div class="table-data-row-icon-layout blue-icon-layout"></div>
+                                        <div class="table-title-content-layout first-th-or-td">
+                                            <span class="table-title-text">مشکل در نصب برنامه های کاربردی</span>
+                                            <div class="table-title-description">
+                                                <div class="label-icon"></div>
+                                                <span class="padding-right-and-left">عمومی</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="person-layout">
+                                            <img class="person-image" src="./Assets/PNG/realAvatar6.png" alt="Avatar1">
+                                            <div class="person-detail">
+                                                <span>کریم حسن آبادی</span>
+                                                <span class="person-more-detail">۲ ماه پیش</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="proyarity-layout">
+                                            <div class="proyarity-icon">
+                                                <div class="proyarity-icon-bar blue-bar"></div>
+                                                <div class="proyarity-icon-bar blue-bar"></div>
+                                                <div class="proyarity-icon-bar blue-bar"></div>
+                                            </div>
+                                            <span class="proyarity-name">زیاد</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="person-layout">
+                                            <img class="person-image" src="./Assets/PNG/realAvatar6.png" alt="Avatar1">
+                                            <div class="person-detail">
+                                                <span>کریم حسن آبادی</span>
+                                                <span class="person-more-detail">۲ ماه پیش</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-box" id="massage-cell-box">
+                    <div class="content-box" id="massage-content-box">
+                        <div class="box-header-layout">
+                            <div class="box-header-titles-layout">
+                                <span class="box-header-title-span-focused">
+                                    صندوق پیام
+                                </span>
+                            </div>
+                            <div class="box-header-time-option-layout">
+                                <select class="time-option">
+                                    <option value="0">ماه گذشته</option>
+                                    <option value="1">فصل گذشته</option>
+                                    <option value="2">سال گذشته</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="article-layout" id="massage-box">
+                            <div class="massages-section-layout">
+                                <div class="massage-image-layout">
+                                    <img class="massage-png" src="./Assets/PNG/realAvatar1.png" alt="avatar">
+                                </div>
+                                <div class="massage-text-layout">
+                                    <div class="massage-title">
+                                        <span>دانیال رحمانی نژاد</span>
+                                        <span class="new-massage">پیام جدید</span>
+                                        <span class="massage-date">۸ روز پیش </span>
                                     </div>
+                                    <span class="massage-detail">گزارش کارکرد دورهمی هفتم آقای دانیال رحمانی نژاد</span>
+                                    <span class="massage-more-detail">طرح‌نما یا لورم ایپسوم به متنی آزمایشی و بی‌معنی
+                                        در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. </span>
                                 </div>
                             </div>
-                       </div>
-                   </div>
-               </div>
-               <div class="container-box" id="last-container">
-                   <div class="cell-box" id="Encyclopedia-layout">
-                       <div class="content-box">
+                            <div class="massages-section-layout">
+                                <div class="massage-image-layout">
+                                    <img class="massage-png" src="./Assets/PNG/realAvatar2.png" alt="avatar">
+                                </div>
+                                <div class="massage-text-layout">
+                                    <div class="massage-title">
+                                        <span>مسعود سیاه قلم</span>
+                                        <span class="new-massage">پیام جدید</span>
+                                        <span class="massage-date">۸ روز پیش </span>
+                                    </div>
+                                    <span class="massage-detail">گزارش کارکرد دورهمی هفتم آقای دانیال رحمانی نژاد</span>
+                                    <span class="massage-more-detail">طرح‌نما یا لورم ایپسوم به متنی آزمایشی و بی‌معنی
+                                        در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. </span>
+                                </div>
+                            </div>
+                            <div class="massages-section-layout last-massages-section-layout">
+                                <div class="massage-image-layout">
+                                    <img class="massage-png" src="./Assets/PNG/realAvatar3.png" alt="avatar">
+                                </div>
+                                <div class="massage-text-layout">
+                                    <div class="massage-title">
+                                        <span>دانیال رحمانی نژاد</span>
+                                        <span class="massage-date">۸ روز پیش </span>
+                                    </div>
+                                    <span class="massage-detail">گزارش کارکرد دورهمی هفتم آقای دانیال رحمانی نژاد</span>
+                                    <span class="massage-more-detail">طرح‌نما یا لورم ایپسوم به متنی آزمایشی و بی‌معنی
+                                        در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-box" id="last-container">
+                <div class="cell-box" id="Encyclopedia-layout">
+                    <div class="content-box">
                         <div class="box-header-layout">
                             <div class="box-header-titles-layout">
                                 <span class="box-header-title-span-focused">
@@ -556,12 +566,141 @@
                             </div>
                         </div>
                         <div class="article-layout">
-                            <!-- Encyclopedia table-->
+                            <table class="tabel">
+                                <tr class="tabel-head-row">
+                                    <th class="first-th-or-td">عنوان</th>
+                                    <th>ایجاد شده توسط</th>
+                                    <th>سامانه</th>
+                                </tr>
+                                <tr class="tabel-data-row">
+                                    <td class="tabel-title-data-layout ">
+                                        <div class="table-title-content-layout first-th-or-td">
+                                            <span class="table-title-text">کلمات , تعاریف و قوانین اصلی دپارتمان
+                                                سرور...</span>
+                                            <div class="table-title-description">
+                                                <div class="table-title-tag">
+                                                    <i class="fas fa-tags"></i>
+                                                    <span>سند,مدیریت,سازمانی</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="person-layout">
+                                            <img class="person-image" src="./Assets/PNG/realAvatar1.png" alt="Avatar1">
+                                            <div class="person-detail">
+                                                <span>دانیال رحمانی نژاد ,۳ روز پیش</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="proyarity-name ">عمومی</span>
+                                    </td>
+                                </tr>
+                                <tr class="tabel-data-row">
+                                    <td class="tabel-title-data-layout">
+                                        <div class="table-title-content-layout first-th-or-td">
+                                            <span class="table-title-text">اخلاق حرفه ای عمومی در شرکت</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="person-layout">
+                                            <img class="person-image" src="./Assets/PNG/realAvatar2.png" alt="Avatar1">
+                                            <div class="person-detail">
+                                                <span>مسعود سیاه قلم , ۱۰ روز پیش </span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="proyarity-name">اراعه فنی</span>
+                                    </td>
+                                </tr>
+                                <tr class="tabel-data-row">
+                                    <td class="tabel-title-data-layout">
+                                        <div class="table-title-content-layout first-th-or-td">
+                                            <span class="table-title-text">راهنمای استفاده از پراکسی</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="person-layout">
+                                            <img class="person-image" src="./Assets/PNG/realAvatar3.png" alt="Avatar1">
+                                            <div class="person-detail">
+                                                <span>محمد رنجبران , ۱۸ روز پیش</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="proyarity-name">متوسط</span>
+                                    </td>
+                                </tr>
+                                <tr class="tabel-data-row">
+                                    <td class="tabel-title-data-layout">
+                                        <div class="table-title-content-layout first-th-or-td">
+                                            <span class="table-title-text">پیاده سازی یک بلاک چین ساده</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="person-layout">
+                                            <img class="person-image" src="./Assets/PNG/realAvatar4.png" alt="Avatar1">
+                                            <div class="person-detail">
+                                                <span>رضا انارکی , ۱ ماه پیش</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="proyarity-layout">
+                                            <span class="proyarity-name">کم</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="tabel-data-row">
+                                    <td class="tabel-title-data-layout">
+                                        <div class="table-title-content-layout first-th-or-td">
+                                            <span class="table-title-text">معرفی jupyter Notebook</span>
+                                            <div class="table-title-description">
+                                                <div class="table-title-tag">
+                                                    <i class="fas fa-tags"></i>
+                                                    <span>سند,مدیریت,سازمانی</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="person-layout">
+                                            <img class="person-image" src="./Assets/PNG/realAvatar5.png" alt="Avatar1">
+                                            <div class="person-detail">
+                                                <span>امیررضا رضوانی ,۲ ماه پیش</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="proyarity-name">اراعه فنی ...</span>
+                                    </td>
+                                </tr>
+                                <tr class="tabel-data-row">
+                                    <td class="tabel-title-data-layout">
+                                        <div class="table-title-content-layout first-th-or-td">
+                                            <span class="table-title-text">saveing the planet</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="person-layout">
+                                            <img class="person-image" src="./Assets/PNG/realAvatar6.png" alt="Avatar1">
+                                            <div class="person-detail">
+                                                <span>کریم حسن آبادی ,۲ ماه پیش</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="proyarity-name">عمومی</span>
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
-                       </div>
-                   </div>
-                   <div class="cell-box" id="news-layout">
-                       <div class="content-box">
+                    </div>
+                </div>
+                <div class="cell-box" id="news-layout">
+                    <div class="content-box">
                         <div class="box-header-layout">
                             <div class="box-header-titles-layout">
                                 <span class="box-header-title-span-focused">
@@ -580,13 +719,143 @@
                             </div>
                         </div>
                         <div class="article-layout">
-                            <!-- news table-->
+                            <table class="tabel">
+                                <tr class="tabel-head-row">
+                                    <th class="first-th-or-td">عنوان</th>
+                                    <th>ایجاد شده توسط</th>
+                                    <th>سامانه</th>
+                                </tr>
+                                <tr class="tabel-data-row">
+                                    <td class="tabel-title-data-layout ">
+                                        <div class="table-title-content-layout first-th-or-td">
+                                            <span class="table-title-text">کلمات , تعاریف و قوانین اصلی دپارتمان
+                                                سرور...</span>
+                                            <div class="table-title-description">
+                                                <div class="table-title-tag">
+                                                    <i class="fas fa-tags"></i>
+                                                    <span>سند,مدیریت,سازمانی</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="person-layout">
+                                            <img class="person-image" src="./Assets/PNG/realAvatar1.png" alt="Avatar1">
+                                            <div class="person-detail">
+                                                <span>دانیال رحمانی نژاد ,۳ روز پیش</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="proyarity-name ">عمومی</span>
+                                    </td>
+                                </tr>
+                                <tr class="tabel-data-row">
+                                    <td class="tabel-title-data-layout">
+                                        <div class="table-title-content-layout first-th-or-td">
+                                            <span class="table-title-text">اخلاق حرفه ای عمومی در شرکت</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="person-layout">
+                                            <img class="person-image" src="./Assets/PNG/realAvatar2.png" alt="Avatar1">
+                                            <div class="person-detail">
+                                                <span>مسعود سیاه قلم , ۱۰ روز پیش </span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="proyarity-name">اراعه فنی</span>
+                                    </td>
+                                </tr>
+                                <tr class="tabel-data-row">
+                                    <td class="tabel-title-data-layout">
+                                        <div class="table-title-content-layout first-th-or-td">
+                                            <span class="table-title-text">راهنمای استفاده از پراکسی</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="person-layout">
+                                            <img class="person-image" src="./Assets/PNG/realAvatar3.png" alt="Avatar1">
+                                            <div class="person-detail">
+                                                <span>محمد رنجبران , ۱۸ روز پیش</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="proyarity-name">متوسط</span>
+                                    </td>
+                                </tr>
+                                <tr class="tabel-data-row">
+                                    <td class="tabel-title-data-layout">
+                                        <div class="table-title-content-layout first-th-or-td">
+                                            <span class="table-title-text">پیاده سازی یک بلاک چین ساده</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="person-layout">
+                                            <img class="person-image" src="./Assets/PNG/realAvatar4.png" alt="Avatar1">
+                                            <div class="person-detail">
+                                                <span>رضا انارکی , ۱ ماه پیش</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="proyarity-layout">
+                                            <span class="proyarity-name">کم</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="tabel-data-row">
+                                    <td class="tabel-title-data-layout">
+                                        <div class="table-title-content-layout first-th-or-td">
+                                            <span class="table-title-text">معرفی jupyter Notebook</span>
+                                            <div class="table-title-description">
+                                                <div class="table-title-tag">
+                                                    <i class="fas fa-tags"></i>
+                                                    <span>سند,مدیریت,سازمانی</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="person-layout">
+                                            <img class="person-image" src="./Assets/PNG/realAvatar5.png" alt="Avatar1">
+                                            <div class="person-detail">
+                                                <span>امیررضا رضوانی ,۲ ماه پیش</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="proyarity-name">اراعه فنی ...</span>
+                                    </td>
+                                </tr>
+                                <tr class="tabel-data-row">
+                                    <td class="tabel-title-data-layout">
+                                        <div class="table-title-content-layout first-th-or-td">
+                                            <span class="table-title-text">saveing the planet</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="person-layout">
+                                            <img class="person-image" src="./Assets/PNG/realAvatar6.png" alt="Avatar1">
+                                            <div class="person-detail">
+                                                <span>کریم حسن آبادی ,۲ ماه پیش</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="proyarity-name">عمومی</span>
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
-                       </div>
-                   </div>
-               </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <script src="./script.js"></script>
-    </body>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
 </html>

@@ -326,6 +326,9 @@
 .first-th-or-td{
     padding-right: 2.5vw;
 }
+.last-th-or-td{
+    padding-left: 2.5vw;
+}
 .tabel-data-row{
     font-size: 0.8vw;
     border-bottom-width: 1px;
@@ -639,8 +642,8 @@
     height: 65vh;
 }
 #Encyclopedia-layout{
-    width: 45%;
+    width: 50%;
 }
 #news-layout{
-    width: 55%;
+    width: 50%;
 }
